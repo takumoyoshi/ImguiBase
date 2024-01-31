@@ -4,7 +4,6 @@
 #include <wtypes.h>
 #include <stdio.h>
 #include <glfw3.h>
-
 #include <vector>
 
 int RenderUi();

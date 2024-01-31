@@ -4,7 +4,8 @@ namespace GuiSettings
 {
 	extern float WindowWidth = 500.0f;
 	extern float WindowHeight = 100.0f;
-	extern char AppName[255] = "Example window";
+	extern wchar_t AppName[255] = L"Example window";
+	extern char AppNameImGui[255] = "Takumo Loader";
 
 	extern std::string CurrentTheme = "Default";
 	extern std::string CurrentPage = "Default";

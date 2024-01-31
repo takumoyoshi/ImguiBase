@@ -3,12 +3,13 @@
 
 #define GL_SILENCE_DEPRECATION
 
+
 bool open = true;
 bool drag = false;
 bool lmb_down = false;
 double last_mouse_clicked_x = 0.0f;
 double last_mouse_clicked_y = 0.0f;
-const char* glsl_version = "#version 420";
+const char* glsl_version = "#version 150";
 
 void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 {
@@ -65,7 +66,6 @@ int RenderUi()
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
-    glfwWindowHint(GLFW_DECORATED, GLFW_FALSE);
     glfwWindowHint(GLFW_TRANSPARENT_FRAMEBUFFER, GLFW_TRUE);
 
     GLFWwindow* window = glfwCreateWindow(GuiSettings::WindowWidth, GuiSettings::WindowHeight, GuiSettings::AppName, nullptr, nullptr);
